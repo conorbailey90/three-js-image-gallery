@@ -40,9 +40,9 @@ let currentY = 0;
 
 // This function is repeatidly called by the webGL class render method.
 function translateGrid(){
-    currentX = lerp(currentX, mouse.x, 0.055);
-    currentY = lerp(currentY, mouse.y, 0.055);
-    grid.style.transform = `translate3d(${-currentX}px, ${-currentY}px, 0)`;
+    currentX = lerp(currentX, mouse.x, 0.015);
+    currentY = lerp(currentY, mouse.y, 0.015);
+    grid.style.transform = `translate3d(${-currentX * 3}px, ${-currentY *3}px, 0)`;
 }
 
 
